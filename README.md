@@ -14,6 +14,7 @@
 请替换 <version> 为你希望使用的CUDA版本。
   ```
 
+
 - Pillow: Python Imaging Library，用于图像处理。
   ```bash
   conda install pillow
@@ -33,7 +34,6 @@
   conda activate myenv
   ```
 - 安装项目依赖
-
   ```bash
   pip install Django
   pip install torch torchvision
