@@ -1,0 +1,14 @@
+<!-- carapp/templates/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>预测结果是：{{ prediction }}</p>
+    <a href="{% url 'upload_image' %}">上传另一张图片</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时路口分析</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard_style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>实时路口分析</h1>
+        </header>
+        <main>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <div class="image-frame"></div>
+                    <img src="{% static 'images/traffic_analysis.png' %}" alt="实时路口分析" class="main-image">
+                </div>
+                <div class="annotation annotation-suv">SUV 0.96</div>
+                <div class="annotation annotation-sedan1">Sedan 0.96</div>
+                <div class="annotation annotation-sedan2">Sedan 0.95</div>
+                <div class="annotation annotation-truck">SUV 0.92</div>
+                <div class="annotation annotation-motorcycle">SUV 0.94</div>
+            </div>
+            <div class="info">
+                <p>路口：S11京承高速从G45大广高速到太阳宫桥-由北向南</p>
+            </div>
+            <div class="chart-container">
+                <div class="chart-text">
+                    <p><span class="white-text">路口：</span><span class="highlight-text">S11京承高速从G45大广高速到太阳宫桥-由北向南</span></p>
+                </div>
+                <div class="chart-image-container">
+                    <img src="{% static 'images/traffic_chart.png' %}" alt="拥堵程度指数" class="chart-image">
+                    <div class="chart-overlay">拥堵延时指数</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

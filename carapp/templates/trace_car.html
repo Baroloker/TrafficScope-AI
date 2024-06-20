@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>车辆追踪页面</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tracecar_style.css' %}">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <!-- 左右切换按钮 -->
+            <button class="nav-button prev" id="prev">&#8249;</button>
+            <button class="nav-button next" id="next">&#8250;</button>
+
+            <div class="slider">
+                <div class="slide">
+                    <div class="photo-box">
+                        <img src="{% static 'images/1.png' %}" alt="路口1">
+                    </div>
+                    <div class="text-box">
+                        <h3>车型一：BMW宝马x5</h3>
+                        <p>时间：7点32分12秒<br>地点：北京市海淀区中关村南大街路口</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="photo-box">
+                        <img src="{% static 'images/3.png' %}" alt="路口2">
+                    </div>
+                    <div class="text-box">
+                        <h3>车型二：BMW宝马740Li</h3>
+                        <p>时间：8点16分21秒<br>地点：北京市海淀区学院路与成府路交叉口</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="photo-box">
+                        <img src="{% static 'images/5.png' %}" alt="路口3">
+                    </div>
+                    <div class="text-box">
+                        <h3>车型三：日产天籁</h3>
+                        <p>时间：9点13分36秒<br>地点：北京市海淀区北四环西路与中关村北大街交汇处</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="photo-box">
+                        <img src="{% static 'images/2.png' %}" alt="路口4">
+                    </div>
+                    <div class="text-box">
+                        <h3>车型一：BMW宝马x5</h3>
+                        <p>时间：10点41分51秒<br>地点：北京市海淀区苏州街与海淀南路交叉口</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="photo-box">
+                        <img src="{% static 'images/4.png' %}" alt="路口5">
+                    </div>
+                    <div class="text-box">
+                        <h3>车型二：BMW宝马740Li</h3>
+                        <p>时间：13点11分06秒<br>地点：北京市海淀区知春路与北三环西路交汇处</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="photo-box">
+                        <img src="{% static 'images/6.png' %}" alt="路口6">
+                    </div>
+                    <div class="text-box">
+                        <h3>车型三：日产天籁</h3>
+                        <p>时间：14点37分56秒<br>地点：北京市海淀区蓝靛厂路与长春桥路交叉口</p>
+                    </div>
+                </div>
+                <!-- 添加更多图片块 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/tracecar_script.js' %}"></script>
+</body>
+</html>

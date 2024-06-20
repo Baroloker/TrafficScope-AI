@@ -1,0 +1,17 @@
+<!-- carapp/templates/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

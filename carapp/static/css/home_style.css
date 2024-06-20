@@ -1,0 +1,105 @@
+
+        body {
+            background: url('home_background.jpg') no-repeat center center fixed; /* 修改为线上图片路径 */
+            background-size: cover;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .dashboard-container {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .left-column, .right-column {
+            width: 20%;
+            font-size: 0.8em;
+        }
+        .middle-column {
+            width: 60%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .chart-container, .map-container, .image-container, .list-container, .stats-container, .right-chart-container {
+            background-color: rgba(28, 39, 60, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+            border: none;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.8em;
+        }
+        .stats-container {
+            flex: 0.3;
+        }
+        .map-container {
+            flex: 0.7;
+        }
+        .chart-container canvas, .map-container #map, .map-container #regionMap, .small-pie-chart {
+            flex: 1;
+        }
+        .small-pie-chart {
+            width: 50px;
+            height: 50px;
+            margin-top: 5px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        h4 {
+            border-bottom: 2px solid #2e3b4e;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 4px 0;
+            font-size: 1.2em;
+        }
+        .title {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 0;
+        }
+        .stats div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .stats div p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+        .total-traffic {
+            font-size: 1.5em;
+            margin-right: 20px;
+        }
